@@ -6,7 +6,7 @@
 #include "Mammal.hpp"
 
 // Declaration for the class Bird
-class Bird : public Mammal
+class Bird : public Animal
 {
 
 //private variables that are solely unique to the Bird class
