@@ -3,15 +3,14 @@
 #ifndef FISH
 #define FISH
 #include "Animal.hpp"
-#include "Mammal.hpp"
 // Declaration for the class Fish
-class Fish : public Mammal
+class Fish : public Animal
 {
 
 //private variables that are unique to this Class
 //i guess because there are poisonous fish?
 private:
-  bool venomous_;
+  bool venomous_ = 0;
 
 //Public member functions to be used by .hpp
 public:

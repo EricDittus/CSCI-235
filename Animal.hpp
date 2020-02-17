@@ -29,8 +29,8 @@ public:
 //private variables that cannot be directly accessed
 private:
   std::string name_;
-  bool domestic_;
-  bool predator_;
+  bool domestic_ = 0;
+  bool predator_ = 0;
 
 
 };

@@ -8,13 +8,13 @@ class Mammal : public Animal
 {
 //private variables that are unique to mammal class
 private:
-  bool hair_;
-  bool airborne_;
-  bool aquatic_;
-  bool toothed_;
-  bool fins_;
-  bool tail_;
-  int legs_;
+  bool hair_ = 0;
+  bool airborne_ = 0;
+  bool aquatic_ = 0;
+  bool toothed_ = 0;
+  bool fins_ = 0;
+  bool tail_ = 0;
+  int legs_ ;
 
   // public member functions that help construct the animal
 public:
