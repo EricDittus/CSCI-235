@@ -10,7 +10,7 @@ Bird::Bird()
 }
 
 //Gives, the name and features of animal by accessing and changing the values of the private variables.
-Bird::Bird(std::string name, bool domestic = 0, bool predator = 0)
+Bird::Bird(std::string name, bool domestic, bool predator)
 {
   setName(name);
   if(domestic == true) {setDomestic();}
