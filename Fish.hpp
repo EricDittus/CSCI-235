@@ -5,7 +5,7 @@
 #include "Animal.hpp"
 #include "Mammal.hpp"
 // Declaration for the class Fish
-class Fish : public Animal
+class Fish : public Mammal
 {
 
 //private variables that are unique to this Class

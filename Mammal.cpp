@@ -7,7 +7,7 @@
 Mammal::Mammal(){}
 
 //Gives, the name and features of animal by accessing and changing the values of the private variables.
-Mammal::Mammal(std::string name, bool domestic, bool predator)
+Mammal::Mammal(std::string name, bool domestic = 0, bool predator = 0)
 {
   setName(name);
   if(domestic == true) {setDomestic();}
