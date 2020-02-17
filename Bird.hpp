@@ -3,6 +3,7 @@
 #ifndef BIRD
 #define BIRD
 #include "Animal.hpp"
+#include "Mammal.hpp"
 
 // Declaration for the class Bird
 class Bird : public Animal
@@ -11,8 +12,8 @@ class Bird : public Animal
 //private variables that are solely unique to the Bird class
 private:
   //both are boolean
-  bool airborne_ = 0;
-  bool aquatic_ = 0;
+  bool airborne_;
+  bool aquatic_;
 
 //public member functions that will construct a potential bird
 public:
