@@ -6,7 +6,6 @@
 //constructs the animal
 Mammal::Mammal()
 {
-  setName("");
   hair_ = false;
   airborne_ = false;
   aquatic_ = false;
@@ -20,52 +19,87 @@ Mammal::Mammal()
 Mammal::Mammal(std::string name, bool domestic, bool predator)
 {
   setName(name);
-  if(domestic=true){setDomestic();}
-  if(predator=true){setPredator();}
-  hair_ = false;
-  airborne_= false;
-  aquatic_= false;
-  toothed_= false;
-  fins_= false;
-  tail_= false;
-  legs_= 0;
-
+  if(domestic == true) {setDomestic();}
+    }
+  if(predator == true) {setPredator();}
 }
 
 //Tells the user if the animal has hair
 bool Mammal::hasHair() const
 {
-  return hair_;
+  if(hair_ == true)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 //Tells the user if the animal is airborne
 bool Mammal::isAirborne() const
 {
-  return airborne_;
+  if(airborne_ == true)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 //Tells the user if the animal is Aquatic
 bool Mammal::isAquatic() const
 {
-  return aquatic_;
+  if(aquatic_ == true)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 //Tells the user if the animal is toothed
 bool Mammal::isToothed() const
 {
-  return toothed_;
+  if(toothed_ == true)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 //Tells the user if the animal has fins
 bool Mammal::hasFins() const
 {
-  return fins_;
+  if(fins_ == true)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
 
 //Tells the user if the animal has a tail
 bool Mammal::hasTail() const
 {
-  return tail_;
+  if(tail_ == true)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 //Sets the length of the animal's legs
@@ -83,77 +117,35 @@ int Mammal::legs() const
 //Makes the animal be defined as having hair
 void Mammal::setHair()
 {
-  if(hair_)
-  {
-    hair_=false;
-  }
-  else
-  {
-    hair_=true;
-  }
+  hair_ = true;
 }
 
 //Makes the animal be defined as being airborne
 void Mammal::setAirborne()
 {
-  if(airborne_)
-  {
-    airborne_=false;
-  }
-  else
-  {
-    airborne_=true;
-  }
+  airborne_ = true;
 }
 
 //Makes the animal defines as being aquatic
 void Mammal::setAquatic()
 {
-  if(aquatic_)
-  {
-    aquatic_=false;
-  }
-  else
-  {
-    aquatic_=true;
-  }
+  aquatic_ = true;
 }
 
 //Makes the animal defined as being toothed
 void Mammal::setToothed()
 {
-  if(toothed_)
-  {
-    toothed_=false;
-  }
-  else
-  {
-    toothed_=true;
-  }
+  toothed_ = true;
 }
 
 //Makes the animal defined as having fins
 void Mammal::setFins()
 {
-  if(fins_)
-  {
-    fins_=false;
-  }
-  else
-  {
-    fins_=true;
-  }
+  fins_ = true;
 }
 
 //Makes the animal defined as having a tail
 void Mammal::setTail()
 {
-  if(tail_)
-  {
-    tail_=false;
-  }
-  else
-  {
-    tail_=true;
-  }
+  tail_ = true;
 }

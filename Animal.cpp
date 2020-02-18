@@ -29,13 +29,25 @@ std::string Animal::getName() const
 //Gives the boolean value of the domestic_ private variable.
 bool Animal::isDomestic() const
 {
-  return domestic_;
+  if(domestic_ == true){
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
 
 //Gives the boolean value of the predator_ private variable.
 bool Animal::isPredator() const
 {
-  return predator_;
+  if(predator_ == true){
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
 
 //Sets, or resets, the name of the animal by changing the value of name_
@@ -47,11 +59,11 @@ void Animal::setName(std::string name)
 //Sets the isDomestic function to return true by making the animal domestic
 void Animal::setDomestic()
 {
-  if(domestic_==false){
-    domestic_=true;
-  }
-  else
+  if(domestic_==false)
   {
+    domestic_=true;
+  {
+  else{
     domestic_ = false;
   }
 
@@ -63,8 +75,7 @@ void Animal::setPredator()
   if(predator_==false){
     predator_=true;
   }
-  else
-  {
+  else{
     predator_ = false;
   }
 

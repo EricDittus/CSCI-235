@@ -6,55 +6,52 @@
 //constructs the animal
 Bird::Bird()
 {
-  setName("");
-  airborne_=false;
-  aquatic_=false;
+  airborne_ == false;
+  aquatic_ == false;
 }
 
 //Gives, the name and features of animal by accessing and changing the values of the private variables.
 Bird::Bird(std::string name, bool domestic, bool predator)
 {
   setName(name);
-  if(domestic=true){setDomestic();}
-  if(predator=true){setPredator();}
-  airborne_=false;
-  aquatic_=false;
+  if(domestic == true) {setDomestic();}
+  if(predator == true) {setPredator();}
 }
 
 //returns if the animal is airborne
 bool Bird::isAirborne() const
 {
-  return airborne_;
+  if(airborne_ == true)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 //returns if the animal is aquatic
 bool Bird::isAquatic() const
 {
-  return aquatic_;
+  if(aquatic_ == true)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 //sets the bird as one that is airborne
 void Bird::setAirborne()
 {
-  if(airborne_)
-	{
-		airborne_ = false;
-	}
-	else
-	{
-		airborne_ = true;
-	}
+  airborne_ = true;
 }
 
 //sets the bird as one that is aquatic
 void Bird::setAquatic()
 {
-  if(aquatic_)
-	{
-		aquatic_ = false;
-	}
-	else
-	{
-		aquatic_ = true;
-	}
+  aquatic_ = true;
 }
