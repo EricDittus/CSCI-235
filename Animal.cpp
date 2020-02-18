@@ -29,24 +29,24 @@ std::string Animal::getName() const
 //Gives the boolean value of the domestic_ private variable.
 bool Animal::isDomestic() const
 {
-  if(domestic_ == true){
-    return true;
+  if(domestic_ == false){
+    return false;
   }
   else
   {
-    return false;
+    return true;
   }
 }
 
 //Gives the boolean value of the predator_ private variable.
 bool Animal::isPredator() const
 {
-  if(predator_ == true){
-    return true;
+  if(predator_ == false){
+    return false;
   }
   else
   {
-    return false;
+    return true;
   }
 }
 

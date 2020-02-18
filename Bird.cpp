@@ -21,26 +21,26 @@ Bird::Bird(std::string name, bool domestic, bool predator)
 //returns if the animal is airborne
 bool Bird::isAirborne() const
 {
-  if(airborne_ == true)
+  if(airborne_ == false)
 	{
-		return true;
+		return false;
 	}
 	else
 	{
-		return false;
+		return true;
 	}
 }
 
 //returns if the animal is aquatic
 bool Bird::isAquatic() const
 {
-  if(aquatic_ == true)
+  if(aquatic_ == false)
 	{
-		return true;
+		return false;
 	}
 	else
 	{
-		return false;
+		return true;
 	}
 }
 

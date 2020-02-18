@@ -20,13 +20,13 @@ Fish::Fish(std::string name, bool domestic, bool predator)
 //Returns if the fish is venomous or not
 bool Fish::isVenomous() const
 {
-  if(venomous_ == true)
+  if(venomous_ == false)
 	{
-		return true;
+		return false;
 	}
 	else
 	{
-		return false;
+		return true;
 	}
 }
 

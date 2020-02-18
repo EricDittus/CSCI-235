@@ -20,84 +20,85 @@ Mammal::Mammal(std::string name, bool domestic, bool predator)
 {
   setName(name);
   if(domestic == true) {setDomestic();}
+  if(domestic = null)
   if(predator == true) {setPredator();}
 }
 
 //Tells the user if the animal has hair
 bool Mammal::hasHair() const
 {
-  if(hair_ == true)
+  if(hair_ == false)
 	{
-		return true;
+		return false;
 	}
 	else
 	{
-		return false;
+		return true;
 	}
 }
 
 //Tells the user if the animal is airborne
 bool Mammal::isAirborne() const
 {
-  if(airborne_ == true)
+  if(airborne_ == false)
 	{
-		return true;
+		return false;
 	}
 	else
 	{
-		return false;
+		return true;
 	}
 }
 
 //Tells the user if the animal is Aquatic
 bool Mammal::isAquatic() const
 {
-  if(aquatic_ == true)
+  if(aquatic_ == false)
 	{
-		return true;
+		return false;
 	}
 	else
 	{
-		return false;
+		return true;
 	}
 }
 
 //Tells the user if the animal is toothed
 bool Mammal::isToothed() const
 {
-  if(toothed_ == true)
+  if(toothed_ == false)
 	{
-		return true;
+		return false;
 	}
 	else
 	{
-		return false;
+		return true;
 	}
 }
 
 //Tells the user if the animal has fins
 bool Mammal::hasFins() const
 {
-  if(fins_ == true)
+  if(fins_ == false)
   {
-    return true;
+    return false;
   }
   else
   {
-    return false;
+    return true;
   }
 }
 
 //Tells the user if the animal has a tail
 bool Mammal::hasTail() const
 {
-  if(tail_ == true)
+  if(tail_ == false)
 	{
-		return true;
+		return false;
 	}
 	else
 	{
-		return false;
+		return true;
 	}
 }
 
