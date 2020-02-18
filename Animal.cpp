@@ -62,7 +62,7 @@ void Animal::setDomestic()
   if(domestic_==false)
   {
     domestic_=true;
-  {
+  }
   else{
     domestic_ = false;
   }

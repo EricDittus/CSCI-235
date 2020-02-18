@@ -20,7 +20,6 @@ Mammal::Mammal(std::string name, bool domestic, bool predator)
 {
   setName(name);
   if(domestic == true) {setDomestic();}
-    }
   if(predator == true) {setPredator();}
 }
 
