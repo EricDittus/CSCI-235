@@ -20,8 +20,8 @@ Mammal::Mammal()
 Mammal::Mammal(std::string name, bool domestic, bool predator)
 {
   setName(name);
-  if(domestic=true){setDomestic()};
-  if(predator=true){setPredator()};
+  if(domestic=true){setDomestic();}
+  if(predator=true){setPredator();}
   hair_ = false;
   airborne_= false;
   aquatic_= false;

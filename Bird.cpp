@@ -15,8 +15,8 @@ Bird::Bird()
 Bird::Bird(std::string name, bool domestic, bool predator)
 {
   setName(name);
-  if(domestic=true){setDomestic()};
-  if(predator=true){setPredator()};
+  if(domestic=true){setDomestic();}
+  if(predator=true){setPredator();}
   airborne_=false;
   aquatic_=false;
 }
@@ -55,6 +55,6 @@ void Bird::setAquatic()
 	}
 	else
 	{
-		aquatic = true;
+		aquatic_ = true;
 	}
 }
