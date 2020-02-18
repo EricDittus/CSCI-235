@@ -6,9 +6,7 @@
 //constructs the animal
 Bird::Bird()
 {
-  name_="";
-  domestic_=false;
-  predator_=false;
+  setName("");
   airborne_=false;
   aquatic_=false;
 }
@@ -16,9 +14,9 @@ Bird::Bird()
 //Gives, the name and features of animal by accessing and changing the values of the private variables.
 Bird::Bird(std::string name, bool domestic, bool predator)
 {
-  name_=name;
-  domestic_=domestic;
-  predator_=predator;
+  setName(name);
+  if(domestic=true){setDomestic()};
+  if(predator=true){setPredator()};
   airborne_=false;
   aquatic_=false;
 }
