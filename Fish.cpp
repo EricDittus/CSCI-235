@@ -6,32 +6,36 @@
 //constructs the animal
 Fish::Fish()
 {
-  venomous_ == false;
+  name_="";
+  domestic_=false;
+  predator_=false;
+  venomous_=false;
 }
 
 //Gives, the name and features of animal by accessing and changing the values of the private variables.
 Fish::Fish(std::string name, bool domestic, bool predator)
 {
-  setName(name);
-  if(domestic == true) {setDomestic();}
-  if(predator == true) {setPredator();}
+  name_=name;
+  domestic_=domestic;
+  predator_=predator;
+  venomous_=false;
 }
 
 //Returns if the fish is venomous or not
 bool Fish::isVenomous() const
 {
-  if(venomous_ == true)
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
+  return venomous_;
 }
 
 //Sets the fish defined as being venomous
 void Fish::setVenomous()
 {
-  venomous_ = true;
+  if(venomous_)
+	{
+		venomous_ = false;
+	}
+	else
+	{
+		venomous_ = true;
+	}
 }
