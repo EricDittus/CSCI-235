@@ -91,7 +91,7 @@ bool Mammal::hasFins() const
 //Tells the user if the animal has a tail
 bool Mammal::hasTail() const
 {
-  if(venomous_ == true)
+  if(tail_ == true)
 	{
 		return true;
 	}
